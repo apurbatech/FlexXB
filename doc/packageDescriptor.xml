@@ -1,0 +1,232 @@
+<overviews> 
+    <packages> 
+        <package name="com.googlecode.flexxb"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Base package. Holds main entry point.  
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                     Base package. Holds main entry point.  
+                ]]> 
+            </description> 
+        </package>
+        <package name="com.googlecode.flexxb.core"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Base package. Holds main entry point.  
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                     Base package. Holds main entry point.  
+                ]]> 
+            </description> 
+        </package>
+        <package name="com.googlecode.flexxb.annotation"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the annotations defined by FlexXB.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the annotations defined by FlexXB.
+                ]]> 
+            </description> 
+        </package> 
+         <package name="com.googlecode.flexxb.annotation.contract"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the annotations defined by FlexXB.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the annotations defined by FlexXB.
+                ]]> 
+            </description> 
+        </package>
+         <package name="com.googlecode.flexxb.annotation.parser"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the annotations defined by FlexXB.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the annotations defined by FlexXB.
+                ]]> 
+            </description> 
+        </package>
+        <package name="com.googlecode.flexxb.interfaces"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds interfaces that objects involved in the xml processing may implement.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds interfaces that objects involved in the xml processing may implement in order to receive notifications from the engine or to instruct it to handle them in specific manner.
+                ]]> 
+            </description> 
+        </package> 
+        <package name="com.googlecode.flexxb.cache"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the cache provider implementations that FlexXB uses.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the cache provider implementations that FlexXB uses.
+                ]]> 
+            </description> 
+        </package> 
+        <package name="com.googlecode.flexxb.api"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the API classes used by the engine. 
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the API classes used by the engine. The API Classes reflect the annotation defined in the annotations package allowing programatic configuration of xml processing metadata. 
+                ]]> 
+            </description> 
+        </package> 
+        <package name="com.googlecode.flexxb.converter"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the simple type converters. 
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the simple type converters. 
+                ]]> 
+            </description> 
+        </package> 
+        <package name="com.googlecode.flexxb.error"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the errors that FlexXB dispatches when abnormal execution is encountered. 
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the errors that FlexXB dispatches when abnormal execution is encountered. These errors cover all areas of FlexXB: api, type descriptor parsing, xml processing. 
+                ]]> 
+            </description> 
+        </package> 
+        <package name="com.googlecode.flexxb.persistence"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the persistable objects.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the persistable objects. Persistable objects are objects aware of changes in teh owned fields, having the ability to track those changes, commit them or revert to the initial state. 
+                ]]> 
+            </description> 
+        </package> 
+         <package name="com.googlecode.flexxb.serializer"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds the FlexXB defined serializers.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds the FlexXB defined serializers. Each annotation has a serializer that ensures proper processing of the xml. 
+                ]]> 
+            </description> 
+        </package> 
+         <package name="com.googlecode.flexxb.service"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds classes that allow sending and receiving xml over HTTP.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds classes that allow sending and receiving xml over HTTP.
+                ]]> 
+            </description> 
+        </package> 
+         <package name="com.googlecode.flexxb.util"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds various utilities used by the project.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                    Holds various utilities used by the project: the cdata function and the Instanciator class, allowing instantiating objects with a variable list of arguments.  
+                ]]> 
+            </description> 
+        </package> 
+        <package name="com.googlecode.flexxb.util.log"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds FlexXB logging system.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                   Holds FlexXB logging system. The logging system allows sending debug messages to the trace window.  
+                ]]> 
+            </description> 
+        </package> 
+        <package name="com.googlecode.flexxb.xml"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds FlexXB logging system.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                   Holds FlexXB logging system. The logging system allows sending debug messages to the trace window.  
+                ]]> 
+            </description> 
+        </package>
+        <package name="com.googlecode.flexxb.xml.annotation"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds FlexXB logging system.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                   Holds FlexXB logging system. The logging system allows sending debug messages to the trace window.  
+                ]]> 
+            </description> 
+        </package>
+        <package name="com.googlecode.flexxb.xml.serializer"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds FlexXB logging system.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                   Holds FlexXB logging system. The logging system allows sending debug messages to the trace window.  
+                ]]> 
+            </description> 
+        </package>
+        <package name="com.googlecode.flexxb.xml.util"> 
+            <shortDescription> 
+                <![CDATA[ 
+                    Holds FlexXB logging system.
+                ]]> 
+            </shortDescription> 
+            <description> 
+                <![CDATA[ 
+                   Holds FlexXB logging system. The logging system allows sending debug messages to the trace window.  
+                ]]> 
+            </description> 
+        </package>
+    </packages> 
+</overviews>

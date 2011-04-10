@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="IPersistable,com.googlecode.flexxb.persistence.IPersistable,additional,changedItemWrappers,changedItems,editMode,editMode,editMode,fieldName,index,kind,modified,modified,modified,persistedValue,source,addItemAt,beforeCommit,beforeCommit,beforeRollback,beforeRollback,clone,commit,commit,commit,dispatchEvent,dispatchEvent,exclude,hasWatchedFields,isAdded,isAdded,isChanged,isMoved,isMoved,isRemoved,isRemoved,isWatched,removeItem,removeItemAt,rollback,rollback,rollback,setEditMode,setEditMode,setEditMode,setItemAt,startListening,startListening,startListening,stopListening,stopListening,stopListening,watch,watchItemChanges"><title>com.googlecode.flexxb.persistence.IPersistable</title></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'IPersistable - FlexXB API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">FlexXB API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?com/googlecode/flexxb/persistence/IPersistable.html&amp;com/googlecode/flexxb/persistence/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">IPersistable</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("IPersistable"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.googlecode.flexxb.persistence</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  IPersistable</td></tr><tr><td class="classHeaderTableLabel">Implementors</td><td> <a href="../../../../com/googlecode/flexxb/persistence/PersistableList.html">PersistableList</a>,  <a href="../../../../com/googlecode/flexxb/persistence/PersistableObject.html">PersistableObject</a></td></tr></table><p></p><p></p><p></p>
+	 Interface defining an object that can be persisted. A persistable object
+	 is capable of tracking changes done to it and reverting to initial values
+	 if required.
+	 <code>IPersistable</code> exposes three methods:
+	 <ul>
+	 	               <li>
+                     <code>modified</code> - check if object has been changed since its last save</li>
+	 	               <li>
+                     <code>commit</code> - make changes done from the last save persistent</li>
+	 	               <li>
+                     <code>rollback</code> - revert to the initial state of the object</li>
+	              </ul>
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#editMode" class="signatureLink">editMode</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 The editMode flag will cause the object not to issue PropertyChangeEvents whenever 
+		 one of its fields is changed.</div></td><td class="summaryTableOwnerCol">IPersistable</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#modified" class="signatureLink">modified</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 Get the object's status: has it been modified since the previous commit?
+		 </div></td><td class="summaryTableOwnerCol">IPersistable</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#commit()" class="signatureLink">commit</a>():void</div><div class="summaryTableDescription">
+		 Commit the changes made to the object since the previous commit
+		 
+		 </div></td><td class="summaryTableOwnerCol">IPersistable</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#rollback()" class="signatureLink">rollback</a>():void</div><div class="summaryTableDescription">
+		 Revert all the changes made to the object since the previous commit
+		 
+		 </div></td><td class="summaryTableOwnerCol">IPersistable</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setEditMode()" class="signatureLink">setEditMode</a>(mode:Boolean):void</div><div class="summaryTableDescription">
+		 Set edit mode.
+		 The editMode flag will cause the object not to issue PropertyChangeEvents whenever 
+		 one of its fields is changed.</div></td><td class="summaryTableOwnerCol">IPersistable</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#startListening()" class="signatureLink">startListening</a>():void</div><div class="summaryTableDescription">
+		 Start listening for changes occuring to the object.</div></td><td class="summaryTableOwnerCol">IPersistable</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopListening()" class="signatureLink">stopListening</a>():void</div><div class="summaryTableDescription">
+		 Stop listening for changes occuring to the object.</div></td><td class="summaryTableOwnerCol">IPersistable</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="editMode"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">editMode</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>editMode:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The editMode flag will cause the object not to issue PropertyChangeEvents whenever 
+		 one of its fields is changed. This means that components bound to that object will 
+		 not update to reflect changes in the object because thare are no change events being 
+		 dispatched from the object. In cases where you would edit the object in a view for 
+		 example, it would be akward to change the name and see it changed in the background 
+		 component displaying basic object details. In conclusion, it is not really an edit flag 
+		 preventing the object from being edited but rather a notifier for the object to turn into 
+		 a sort of a black box while that flag is active.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get editMode():Boolean</code><br/></div><a name="propertyDetail"></a><a name="modified"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">modified</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>modified:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Get the object's status: has it been modified since the previous commit?
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get modified():Boolean</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="commit()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">commit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function commit():void</code><p></p><p></p><p>
+		 Commit the changes made to the object since the previous commit
+		 
+		 </p></div><a name="rollback()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">rollback</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function rollback():void</code><p></p><p></p><p>
+		 Revert all the changes made to the object since the previous commit
+		 
+		 </p></div><a name="setEditMode()"></a><a name="setEditMode(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setEditMode</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setEditMode(mode:Boolean):void</code><p></p><p></p><p>
+		 Set edit mode.
+		 The editMode flag will cause the object not to issue PropertyChangeEvents whenever 
+		 one of its fields is changed. This means that components bound to that object will 
+		 not update to reflect changes in the object because thare are no change events being 
+		 dispatched from the object. In cases where you would edit the object in a view for 
+		 example, it would be akward to change the name and see it changed in the background 
+		 component displaying basic object details. In conclusion, it is not really an edit flag 
+		 preventing the object from being edited but rather a notifier for the object to turn into 
+		 a sort of a black box while that flag is active.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">mode</span>:Boolean</code> &mdash; boolean value specifing id the flag must be active or not
+		 
+		 </td></tr></table></p></div><a name="startListening()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">startListening</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function startListening():void</code><p></p><p></p><p>
+		 Start listening for changes occuring to the object.
+		 Usually called after deserialization completes.
+		 
+		 </p></div><a name="stopListening()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stopListening</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stopListening():void</code><p></p><p></p><p>
+		 Stop listening for changes occuring to the object.
+		 It is usually called before deserialization occurs.
+		 
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Sun Feb 20 2011, 12:22 AM +13:00  </center></div></body></html><!--<br/>Sun Feb 20 2011, 12:22 AM +13:00  -->
